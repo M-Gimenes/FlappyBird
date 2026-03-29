@@ -1,27 +1,27 @@
-# Flappy Bird Clone (Unity Study) 🐦
+# Flappy Bird Clone (Unity) 🐦
 
-A faithful recreation of the classic Flappy Bird game, developed in **Unity** to practice game engine fundamentals, 2D physics, and C# scripting.
+A 2D game built with **Unity** and **C#** based on the classic Flappy Bird mechanics. Developed as a study of game engine components and 2D physics.
 
-## 📌 Project Purpose
+## 📌 Project Overview
 
-This project was built to transition from general programming to **Component-Based Development**. It serves as a demonstration of my ability to handle real-time physics, object spawning, and user interface management within a professional game engine.
+This project implements the core logic of a side-scrolling bird game, focusing on real-time physics and obstacle generation.
 
-## 🛠️ Unity Features & Concepts Explored
+## 🛠️ Technical Implementation
 
-* **2D Physics (Rigidbody2D & Colliders):** Implementing gravity, upward force (flapping), and collision detection with pipes and the ground.
-* **Prefabs & Spawning:** Using a "Spawner" script to instantiate pipe obstacles at random heights and regular intervals.
-* **Game State Management:** Handling "Start," "Playing," and "Game Over" states through a centralized Game Manager.
-* **UI Canvas:** Displaying real-time scoring and high scores using the Unity UI system.
-* **C# Scripting:** Writing clean, modular scripts for player movement, scrolling backgrounds, and trigger-based scoring.
+* **2D Physics:** Uses `Rigidbody2D` for gravity and upward force (flapping), and `Circle/BoxColliders` for hit detection.
+* **Obstacle Spawner:** A system that instantiates pipe prefabs at random vertical positions and set time intervals.
+* **UI & Scoring:** Implementation of a Canvas system to track current score and display the Game Over screen.
+* **Scene Management:** Logic for resetting the game state and reloading the scene after a collision.
+* **Background Scrolling:** A simple script to loop background textures, creating an infinite movement effect.
 
-## 🏗️ Technical Highlights
+## 🏗️ Requirements
 
-* **Infinite Scrolling:** Implementing a logic to wrap or loop background/ground sprites to create the illusion of endless flight.
-* **Trigger Events:** Using `OnTriggerEnter2D` to detect when the bird passes through the gap between pipes to increment the score.
+* **Unity Version:** [Insira a versão aqui, ex: 2021.3+]
+* **Language:** C#
 
 ## 🚀 How to Play
 
 You can download the installer from the following file: [FlappyBird](https://github.com/M-Gimenes/FlappyBird/blob/main/FlappyBird.apk) (android only)
 
 ---
-*Developed as an academic exercise to master the Unity 2D workflow and C# game logic.*
+*Academic project for studying Unity 2D and C# scripting.*
